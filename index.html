@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
+
 <body>
-    <header class="cabecalho"> 
-        <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">Home</a>
-            <a class="cabecalho__menu__link" href="about.html">About Me</a>
-            <a class="cabecalho__menu__link" href="project.html">My Projects</a>
+    <header class="cabecalho">
+        <nav class="navbar navbar-expand-md ">
+            <div class="container-fluid justify-content-end">
+                <button class="navbar-toggler fs-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mt-0 cabecalho__menu">
+                        <li class="nav-item">
+                            <a class="cabecalho__menu__link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="cabecalho__menu__link" href="about.html">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="cabecalho__menu__link" href="project.html">My Projects</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-    </header> 
+    </header>
 
     <main class="apresentacao">
         <section class="apresentacao__conteudo">
@@ -28,15 +47,16 @@
                 <a class="apresentacao__links__navegacao" href="https://www.linkedin.com/in/lucas-santos-729047236">
                     <img src="./assets/linkedin.png" alt="imagem do linkedin">
                     Linkedin
-                </a>    
-            </div>    
+                </a>
+            </div>
         </section>
         <img class="imagem__lucas" src="./assets/imagem.jpeg" alt="Foto do Lucas Santos">
     </main>
-    
+
     <footer class="rodape">
         <p>Developed by Lucas Santos</p>
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
+
 </html>

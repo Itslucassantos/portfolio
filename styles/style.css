@@ -2,166 +2,168 @@
 
 /* para definir uma variável global*/
 :root {
-    --cor-primaria: #000000;
-    --cor-secundaria: #F6F6F6;
-    --cor-terciaria: #22D4FD;
-    --cor-hover: #272727;
+  --cor-primaria: #000000;
+  --cor-secundaria: #f6f6f6;
+  --cor-terciaria: #22d4fd;
+  --cor-hover: #272727;
 
-    --font-primaria: 'Krona One', sans-serif;
-    --font-secundaria: 'Montserrat', sans-serif;
+  --font-primaria: 'Krona One', sans-serif;
+  --font-secundaria: 'Montserrat', sans-serif;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    /* como o conteúdo está crescendo, não faz mais sentido que tenha o height: 100vb, pq o conteúdo vai ficar fora do body,
+  /* como o conteúdo está crescendo, não faz mais sentido que tenha o height: 100vb, pq o conteúdo vai ficar fora do body,
     pelo tamanho que está ficando grande */
-    /* height: 100vb; */
-    box-sizing: border-box;
-    background-color: var(--cor-primaria); /* é a cor de fundo*/
-    color: var(--cor-secundaria); /*é a cor do meu texto.*/
+  /* height: 100vb; */
+  box-sizing: border-box;
+  background-color: var(--cor-primaria); /* é a cor de fundo*/
+  color: var(--cor-secundaria); /*é a cor do meu texto.*/
 }
 
 .cabecalho {
-    /* 2% valor do preenchimento da parte superior, 0% valor do lado direiro, 0% valor da parte inferior e 15% valor da parte esquerda*/
-    padding: 2% 0% 0% 15%;
+  /* 2% valor do preenchimento da parte superior, 0% valor do lado direiro, 0% valor da parte inferior e 15% valor da parte esquerda*/
+  padding: 2% 0% 0% 15%;
 }
 
 .cabecalho__menu {
-    /* espaçamento entre a home e o about me*/
-    display: flex;
-    gap: 80px;
+  /* espaçamento entre a home e o about me*/
+  display: flex;
+  gap: 80px;
 }
 
 .cabecalho__menu__link {
-    font-family: var(--font-secundaria);
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--cor-terciaria);
-    text-decoration: none; /* para o nosso texto não ter nenhuma decoração*/
+  font-family: var(--font-secundaria);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--cor-terciaria);
+  text-decoration: none; /* para o nosso texto não ter nenhuma decoração*/
 }
 
 .apresentacao {
-    /*substitui para padding para o conteúdo caber na tela toda*/
-    padding: 5% 15%;
-    /*margin: 10% 15%; diz que apenas os elementos da class main, vai ter uma margem. 10% é vertical e 15% é horizontal */
-    display: flex; /* para iniciar o flexbox é preciso sempre o display*/ 
-    align-content: center; /* centraliza o conteúdo entre os próprios centros*/
-    justify-content: space-between; /* Deixa um espaço entre os conteúdos, imagens, etc...*/
-    gap: 82px; /*para ter um espaçamento entre os dois elementos filhos, que é o conteúdo e a foto*/
+  /*substitui para padding para o conteúdo caber na tela toda*/
+  padding: 5% 15%;
+  /*margin: 10% 15%; diz que apenas os elementos da class main, vai ter uma margem. 10% é vertical e 15% é horizontal */
+  display: flex; /* para iniciar o flexbox é preciso sempre o display*/
+  align-content: center; /* centraliza o conteúdo entre os próprios centros*/
+  justify-content: space-between; /* Deixa um espaço entre os conteúdos, imagens, etc...*/
+  gap: 82px; /*para ter um espaçamento entre os dois elementos filhos, que é o conteúdo e a foto*/
 }
 
 .apresentacao__conteudo {
-    width: 50%; /* largura*/
-    display: flex;
-    flex-direction: column; /*para ficar em pé na coluna*/
-    gap: 40px; /* gap é para definir o espeçamento entre os elementos, é do flexbox*/
+  width: 50%; /* largura*/
+  display: flex;
+  flex-direction: column; /*para ficar em pé na coluna*/
+  gap: 40px; /* gap é para definir o espeçamento entre os elementos, é do flexbox*/
 }
 
 .apresentacao__conteudo__titulo {
-    /* para achar o valor em rem é só dividir o px por 16*/
-    font-size: 2.25rem; /* tamanho da fonte do titulo*/
-    font-family: var(--font-primaria) /*utilizando o import do estilo para o titulo*/
+  /* para achar o valor em rem é só dividir o px por 16*/
+  font-size: 2.25rem; /* tamanho da fonte do titulo*/
+  font-family: var(
+    --font-primaria
+  ); /*utilizando o import do estilo para o titulo*/
 }
 
 .titulo-destaque {
-    color: var(--cor-terciaria);
+  color: var(--cor-terciaria);
 }
 
 .apresentacao__conteudo__texto {
-    font-size: 1.5rem; /* tamanho da fonte do texto*/
-    font-family: var(--font-secundaria) /*utilizando o import do estilo para o texto*/
+  font-size: 1.5rem; /* tamanho da fonte do texto*/
+  font-family: var(
+    --font-secundaria
+  ); /*utilizando o import do estilo para o texto*/
 }
 
 .apresentacao__links {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center; /*centraliza os itens no eixo vertical*/
-    gap: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; /*centraliza os itens no eixo vertical*/
+  gap: 32px;
 }
 
 .apresentacao__links__subtitulo {
-    font-family: var(--font-primaria);
-    font-weight: 400;
-    font-size: 1.5rem;
+  font-family: var(--font-primaria);
+  font-weight: 400;
+  font-size: 1.5rem;
 }
 
 .apresentacao__links__navegacao {
-    display: flex; /* para iniciar o flexbox e deixar tudo no msm canto para poder mexer no alinhamento*/
-    justify-content: center; /*traz os conteúdos para o centro*/
-    gap: 16px; /* para deixar um espaçamento entre eles*/
-    /* background-color: #22D4FD; para a cor de fundo do link */ 
-    border: 2px solid var(--cor-terciaria); /* 2px define a grossura da borda, solid é o formato da borda, tem outros.*/
-    width: 378px;
-    text-align: center; /* para alinhar o texto no centro*/
-    border-radius: 8px; /* raio de arredondamento da borda, para arredondar a ponta de cada borda*/
-    font-size: 1.5rem;
-    font-weight: 600; /*peso da fonte*/
-    /* padding é a distância do conteúdo para a borda*/
-    padding: 21.5px 0; /*21.5px para aumentar o tamanho na vertical, 0 como não é pra aumentar na horizontal é 0*/
-    text-decoration: none; /*para tirar a decoração padrão, que é a linha que fica embaixo do texto*/
-    color: var(--cor-secundaria);
-    font-family: var(--font-secundaria);
+  display: flex; /* para iniciar o flexbox e deixar tudo no msm canto para poder mexer no alinhamento*/
+  justify-content: center; /*traz os conteúdos para o centro*/
+  gap: 16px; /* para deixar um espaçamento entre eles*/
+  /* background-color: #22D4FD; para a cor de fundo do link */
+  border: 2px solid var(--cor-terciaria); /* 2px define a grossura da borda, solid é o formato da borda, tem outros.*/
+  width: 378px;
+  text-align: center; /* para alinhar o texto no centro*/
+  border-radius: 8px; /* raio de arredondamento da borda, para arredondar a ponta de cada borda*/
+  font-size: 1.5rem;
+  font-weight: 600; /*peso da fonte*/
+  /* padding é a distância do conteúdo para a borda*/
+  padding: 21.5px 0; /*21.5px para aumentar o tamanho na vertical, 0 como não é pra aumentar na horizontal é 0*/
+  text-decoration: none; /*para tirar a decoração padrão, que é a linha que fica embaixo do texto*/
+  color: var(--cor-secundaria);
+  font-family: var(--font-secundaria);
 }
 
 /* para dar um destaque quando passar pelo link*/
 .apresentacao__links__link:hover {
-    background-color: var(--cor-hover);
+  background-color: var(--cor-hover);
 }
 
 .imagem__lucas {
-    display: flex;
-    align-content: center;
-    /*quer dizer que a imagem ocupa 50% e o conteúdo os ostros 50%*/
-    width: 50%;
-    height: 50%; 
-    border-radius: 25px;
+  display: flex;
+  align-content: center;
+  /*quer dizer que a imagem ocupa 50% e o conteúdo os ostros 50%*/
+  width: 50%;
+  height: 50%;
+  border-radius: 25px;
 }
 
 .rodape {
-    padding: 24px;
-    color: var(--cor-primaria);
-    background-color: var(--cor-terciaria);
-    text-align: center; /*traz o conteúdo para o centro*/
-    font-family: var(--font-secundaria);
-    font-size: 1.5rem;
-    font-weight: 400;
+  padding: 24px;
+  color: var(--cor-primaria);
+  background-color: var(--cor-terciaria);
+  text-align: center; /*traz o conteúdo para o centro*/
+  font-family: var(--font-secundaria);
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 /*if a largura do px até esse valor usa esses estilos, senao usa os estilos acima. É para isso que serve o media*/
 @media (max-width: 1080px) {
+  /* não precisa reescrever códigos que já foi inserido acima, por exemplo iniciar o flexbox*/
+  .cabecalho {
+    padding: 10%;
+  }
 
-    /* não precisa reescrever códigos que já foi inserido acima, por exemplo iniciar o flexbox*/
-    .cabecalho {
-        padding: 10%;
-    }
+  .cabecalho__menu {
+    justify-content: center; /*para centralizar o menu*/
+  }
 
-    .cabecalho__menu {
-        justify-content: center; /*para centralizar o menu*/
-    }
+  .apresentacao {
+    /*para deixar todos os atributos em coluna, um embaixo do outro e inverte a ordem do ultimo para o primeiro*/
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
 
-    .apresentacao {
-        /*para deixar todos os atributos em coluna, um embaixo do outro e inverte a ordem do ultimo para o primeiro*/
-        flex-direction: column-reverse; 
-        padding: 5%;
-    }
+  .apresentacao__conteudo {
+    /* essa propriedade auto, faz o conteúdo se adequar com o elemento pai. E não ficando maior que ele. porque estava usando o tamanho definido acima.*/
+    width: auto;
+  }
 
-    .apresentacao__conteudo {
-        /* essa propriedade auto, faz o conteúdo se adequar com o elemento pai. E não ficando maior que ele. porque estava usando o tamanho definido acima.*/
-        width: auto;
-    }
+  .apresentacao__links__navegacao {
+    width: 320px;
+  }
 
-    .apresentacao__links__navegacao {
-        width: 280px;
-    }
-
-    .imagem__lucas {
-        width: auto;
-        height: auto;
-    }
-
+  .imagem__lucas {
+    width: auto;
+    height: auto;
+  }
 }
